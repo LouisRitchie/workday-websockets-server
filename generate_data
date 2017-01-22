@@ -1,0 +1,11 @@
+#! /bin/sh
+
+nshuffle () { 
+  shuf -i 1-100 -n "$1" | tr "\n" "," | read str; 
+  echo ${str};
+  str=${str:0:(${#str}-2)};
+  echo $str; 
+}
+
+# generate a list of 100 numbers between 1-100 and concat them to data
+nshuffle 20
