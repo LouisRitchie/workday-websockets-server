@@ -2,7 +2,7 @@
 const io = require('socket.io')();
 const fs = require('fs');
 
-let mediaPath = __dirname + '/../d3-audio-spectrum/public/media';
+let mediaPath = __dirname + '/d3-audio-spectrum/public/media';
 console.log(mediaPath);
 let servePath = 'media/';
 let playlist  = [];
